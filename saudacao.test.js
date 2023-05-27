@@ -1,7 +1,9 @@
+const { describe } = require('node:test')
 const saudacao = require('./saudacao')
 
-describe('teste para saudacao'. () => {
-    test('teste deverar retornar Olá, Maria', () => {
-        expect(saudacao('Maria')).toBe('Olá, Maria')
+describe('Teste para saudacao', () => {
+    test('Deverá retornar Olá, Maria', () => {
+        const olaMaria = saudacao.dizOla('Maria')
+        expect(olaMaria).toBe('Olá, Maria')
     })
 })
