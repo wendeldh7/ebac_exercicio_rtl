@@ -1,19 +1,15 @@
-import React from 'react'
-import GlobalStyle, { Container } from './styles'
-import SideBar from './Containers/Sidebar'
-import Tasks from './Containers/Tasks'
-import Task from './components/Task'
+import Post from "./components/Post";
+
+import styles from './App.module.css';
 
 function App() {
   return (
-    <>
-      <GlobalStyle></GlobalStyle>
-      <Container>
-        <SideBar></SideBar>
-        <Tasks></Tasks>
-      </Container>
-    </>
-  )
+    <div className={styles.app}>
+      <Post imageUrl="https://www.orangeboxminiaturas.com.br/img/products/batmovel-1989-figura-batman-em-metal-jada-toys-1-24-jad-98260_1_1000.jpg">
+        Olha só que legal minha miniatura do Batmóvel.
+      </Post>
+    </div>
+  );
 }
 
-export default App
+export default App;
